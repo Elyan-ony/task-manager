@@ -45,12 +45,12 @@ body{
     font-size: x-large;
 }
 
-#taskCard{
+.taskCard{
     margin: 20px;
     background-color: hsl(244, 63%, 23%);
 }
 
-#taskCard button{
+.taskCard button{
     margin: 20px;
     height: 60px;
     width: 120px;
@@ -63,17 +63,17 @@ body{
     justify-content: space-evenly;
 }
 
-#delete{
+.delete{
     background-color: hsl(0, 100%, 50%);
     color: hsl(0, 0%, 100%);
 }
 
-#markInProgress{
+.markInProgress{
     background-color: blueviolet;
     color: white;
 }
 
-#markDone{
+.markDone{
     background-color: blue;
     color: white;
 }
