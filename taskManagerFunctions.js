@@ -16,7 +16,6 @@ export function createTask(){
     const taskCard = document.createElement('div');
     taskCard.setAttribute("class", "taskCard");
     taskCard.setAttribute("id", `taskCard${taskId}`);
-    const taskCardElement = document.getElementById(`taskCard${taskId}`)
 
     const taskDetail = document.createElement('h3');
     taskDetail.innerText = document.getElementById('textBox').value;
@@ -41,12 +40,17 @@ export function createTask(){
     const markDoneButton = document.createElement('button');
     markDoneButton.innerText = "Mark Done";
     markDoneButton.setAttribute("class", "markDone");
+
+    const editButton = document.createElement('button');
+    editButton.innerText = "Edit task";
+    editButton.setAttribute("class", "edit");
     
 
     //append buttons to their containers 
     taskButtonContainer.appendChild(deleteButton);
     taskButtonContainer.appendChild(markInProgressButton);
     taskButtonContainer.appendChild(markDoneButton);
+    taskButtonContainer.appendChild(editButton);
 
     taskCard.appendChild(taskDetail);
     taskCard.appendChild(status);
